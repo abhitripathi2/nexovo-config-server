@@ -17,4 +17,4 @@ minio:
   url: http://localhost:9012
   access-key: minio_NexovoAdmin
   secret-key: minioPassword
-  bucket: nexovo
+  project-bucket: nexovo

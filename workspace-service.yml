@@ -2,7 +2,7 @@ server:
   port: 9020
   servlet.context-path: /workspace
 
-sspring:
+spring:
   datasource:
     url: jdbc:postgresql://localhost:9010/nexovo-workspace-db
     username: iamtheUser

@@ -8,3 +8,18 @@ spring:
     username: iamtheUser
     password: passWord
     driver-class-name: org.postgresql.Driver
+
+
+  ai:
+    model.chat: openai
+    openai:
+      api-key: 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
+      base-url: https://openrouter.ai/api
+      chat:
+        options:
+          model: google/gemini-3-flash-preview
+          temperature: 0.2
+      embedding:
+        options:
+          model: qwen/qwen3-embedding-8b
+

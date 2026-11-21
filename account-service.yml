@@ -4,7 +4,7 @@ server:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:9010/pgvector-test/nexovo-account-db
+    url: jdbc:postgresql://localhost:9010/nexovo-account-db
     username: iamtheUser
     password: passWord
     driver-class-name: org.postgresql.Driver

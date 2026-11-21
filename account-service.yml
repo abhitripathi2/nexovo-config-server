@@ -1,0 +1,16 @@
+server:
+  port: 9050
+  servlet.context-path: /account
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:9010/pgvector-test/nexovo-account-db
+    username: iamtheUser
+    password: passWord
+    driver-class-name: org.postgresql.Driver
+
+stripe:
+  api:
+    secret: sk_test_51UVFj4H1ZW4qtHvPEaiPtQemtAZ9werkH8nK9WRfwYS5I5ujn2bhCU0r01k4U85wsUbfwbGlyvjMgY9syVdGjo5h00gPcPbPQF
+  webhook:
+    secret: whsec_00ebf8617fdd433964152968f91d108866bf64e2f6e016c833a4961dbab32655

@@ -14,3 +14,23 @@ stripe:
     secret: sk_test_51UVFj4H1ZW4qtHvPEaiPtQemtAZ9werkH8nK9WRfwYS5I5ujn2bhCU0r01k4U85wsUbfwbGlyvjMgY9syVdGjo5h00gPcPbPQF
   webhook:
     secret: whsec_00ebf8617fdd433964152968f91d108866bf64e2f6e016c833a4961dbab32655
+
+
+
+---
+
+spring:
+  config:
+    activate:
+      on-profile: k8s
+  datasource:
+    url: jdbc:postgresql://pgvector.nexovo-core.svc.cluster.local:5432/account_db
+    username: account_user
+    password: ${DB_PASSWORD}
+
+
+stripe:
+  api:
+    secret: ${STRIPE_API_KEY}
+  webhook:
+    secret: ${STRIPE_WEBHOOK_SECRET}
